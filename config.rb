@@ -57,16 +57,23 @@
 helpers do
   def presentation_title
     # set your presentation title here
-    "My Presentation Title"
+    "Seconds Investor Deck"
   end
 
   def presentation_description
     # set your presentation description here
-    "description of presentation..."
+    "text messaging and mobile commerce"
   end
 
   def some_helper
     "Helping"
+  end
+
+  def presentation_slides
+    Dir["./source/presentation/*.png"].each_with_index do |img_path, i|
+      img_path = img_path.gsub("./source/", "").gsub("/_", "/").gsub(/$_/, "")
+      yield img_path, i
+    end
   end
 
   # outputs slides in the slides folders

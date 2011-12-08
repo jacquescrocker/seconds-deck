@@ -1,0 +1,14 @@
+<header class="caption">
+  <%= link_to "Start Presentation", "?full#Cover", :class => "button primary" %>
+  <h1><%= presentation_title %></h1>
+  <p><%= presentation_description %></p>
+</header>
+
+<% presentation_slides do |img, i| %>
+  <div class="slide bg" id="slide<%= i %>"><div>
+    <section>
+      <img src="<%= img %>" alt="">
+      <!-- © John Carey, http://fiftyfootshadows.net/ -->
+    </section>
+  </div></div>
+<% end %>
