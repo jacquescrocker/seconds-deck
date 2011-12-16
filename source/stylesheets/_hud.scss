@@ -1,0 +1,382 @@
+
+/* waiting spinner */
+
+div#waitingIndicator
+{
+        position: absolute;
+        visibility: hidden;
+        width: 110px;
+        height: 110px;
+        background-image: url('hud/waiting_bezel.png');
+}
+
+div#waitingSpinner
+{
+        position: absolute;
+        visibility: hidden;
+        top: 32px;
+        left: 38px;
+        width: 32px;
+        height: 32px;
+        background-image: url('hud/spinner_dkgrey.gif');
+}
+
+/* HUD */
+
+div#hud
+{
+  position: absolute;
+  width: 340px;
+  height: 59px;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* HUD Background Bezel
+   -------------------- */
+
+.hudBezel
+{
+  position: absolute;
+  top: 0px;
+  height: 58px;
+}
+
+div#hudBezelLeftEndCap
+{
+  left: 1px;
+  width: 10px;
+  background-image: url('hud/bezel-l.png');
+}
+
+div#hudBezelFiller
+{
+  left: 10px;
+  width: 340px;
+  background-image: url('hud/bezel-m.png');
+}
+
+div#hudBezelRightEndCap
+{
+  left: 349px;
+  width: 10px;
+  background-image: url('hud/bezel-r.png');
+}
+
+img#hudBezelLeftDivider
+{
+  left: 95px;
+  width: 2px;
+  background-image: url('hud/doc_info_mobile_cut.png');
+}
+
+img#hudBezelRightDivider
+{
+  left: 285px;
+  width: 1px;
+  background-image: url('hud/doc_info_mobile_cut.png');
+}
+
+/* HUD Mute Button
+   --------------- */
+
+/*
+div.hudMuteButton
+{
+  position: absolute;
+  cursor: pointer;
+  left: 26px;
+  top: 18px;
+  width: 24px;
+  height: 21px;
+  background-image: url('hud/snd_on_n.png');
+}
+
+div#hudMuteButton:active
+{
+  background-image: url('hud/snd_on_p.png');
+}
+*/
+
+/* HUD Prev Button
+   --------------- */
+
+div#hudPreviousButton
+{
+  position: absolute;
+  left: 47px;
+  top: 17px;
+  width: 31px;
+  height: 23px;
+}
+
+div.hudPreviousButtonEnabled
+{
+  cursor: pointer;
+  background-image: url('hud/left_arrow_n.png');
+}
+
+div.hudPreviousButtonEnabled:active
+{
+  background-image: url('hud/left_arrow_p.png');
+}
+
+div.hudPreviousButtonDisabled
+{
+  cursor: default;
+  background-image: url('hud/left_arrow_d.png');
+}
+
+/* HUD Slide Counter
+   ----------------- */
+
+div.hudSlideCounter
+{
+  position: absolute;
+  height: 22px;
+  left: 84px;
+  width: 136px;
+
+  font-family: "Helvetica";
+  text-shadow: 0.0em 0.2em #000000;
+  text-align: center;
+  color: #838383;
+}
+
+div#hudSlideCounterSection
+{
+  top: 12px;
+  height: 22px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* HUD Next Button
+   --------------- */
+
+div#hudNextButton
+{
+  position: absolute;
+  left: 223px;
+  top: 17px;
+  width: 31px;
+  height: 23px;
+}
+
+div.hudNextButtonEnabled
+{
+  cursor: pointer;
+  background-image: url('hud/right_arrow_n.png');
+}
+
+div.hudNextButtonEnabled:active
+{
+  background-image: url('hud/right_arrow_p.png');
+}
+
+div.hudNextButtonDisabled
+{
+  cursor: default;
+  background-image: url('hud/right_arrow_d.png');
+}
+
+/* HUD Close Button
+   ---------------- */
+
+div#hudCloseButton
+{
+  position: absolute;
+  left: 311px;
+  top: 18px;
+  width: 21px;
+  height: 22px;
+}
+
+div.hudCloseButtonEnabled
+{
+  cursor: pointer;
+  background-image: url('hud/close_n.png');
+}
+
+div.hudCloseButtonEnabled:active
+{
+  background-image: url('hud/close_p.png');
+}
+
+/* Embedded Control Bar
+   -------------------- */
+
+div#embed_background
+{
+    position: absolute;
+    display: none;
+    background-color: #000000;
+}
+
+div#embeddedControlBar
+{
+  position: absolute;
+  display: none;
+}
+
+div#embeddedControlBarBackground
+{
+  position: absolute;
+  top: 0px;
+  height: 30px;
+  width: 100%;
+}
+
+div.embeddedControlBarBezel
+{
+  position: absolute;
+  top: 0px;
+  height: 30px;
+}
+
+div#embeddedControlBarBezel_LeftEndCap
+{
+  background-image: url('hud/control_bg-cap-left.png');
+  width: 10px;
+}
+
+div#embeddedControlBarBezel_Filler
+{
+  background-image: url('hud/control_bg-fill.png');
+  background-repeat: repeat-x;
+  left: 10px;
+}
+
+div#embeddedControlBarBezel_RightEndCap
+{
+  background-image: url('hud/control_bg-cap-right.png');
+  width: 10px;
+}
+
+div#embeddedSlideCounterSection
+{
+  position: absolute;
+  top: 8px;
+  height: 14px;
+  width: 80px;
+
+  font-family: "Helvetica";
+  font-size: 12px;
+  text-shadow: 0.0em 0.2em #000000;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* Embedded Restart Button
+   ----------------------- */
+
+div#embeddedControls_Restart
+{
+  position: absolute;
+  top: 0px;
+  width: 35px;
+  height: 30px;
+}
+
+div.embeddedControls_Restart_Enabled
+{
+  cursor: pointer;
+  background-image: url('hud/control_restart_N.png');
+}
+
+div.embeddedControls_Restart_Enabled:active
+{
+  cursor: pointer;
+  background-image: url('hud/control_restart_P.png');
+}
+
+div.embeddedControls_Restart_Disabled
+{
+  cursor: default;
+  background-image: url('hud/control_restart_D.png');
+}
+
+/* Embedded Prev Button
+   -------------------- */
+
+div#embeddedControls_Previous
+{
+  position: absolute;
+  top: 0px;
+  width: 35px;
+  height: 30px;
+  left: 100px;
+}
+
+div.embeddedControls_Previous_Enabled
+{
+  cursor: pointer;
+  background-image: url('hud/control_previous_N.png');
+}
+
+div.embeddedControls_Previous_Enabled:active
+{
+  background-image: url('hud/control_previous_P.png');
+}
+
+div.embeddedControls_Previous_Disabled
+{
+  cursor: default;
+  background-image: url('hud/control_previous_D.png');
+}
+
+/* Embedded Next Button
+   -------------------- */
+
+div#embeddedControls_Next
+{
+  position: absolute;
+  top: 0px;
+  width: 35px;
+  height: 30px;
+  left: 200px;
+}
+
+div.embeddedControls_Next_Enabled
+{
+  cursor: pointer;
+  background-image: url('hud/control_next_N.png');
+}
+
+div.embeddedControls_Next_Enabled:active
+{
+  background-image: url('hud/control_next_P.png');
+}
+
+div.embeddedControls_Next_Disabled
+{
+  cursor: default;
+  background-image: url('hud/control_next_D.png');
+}
+
+/* Embedded iWork.com link Button
+   ------------------------------ */
+
+div#embeddedControls_Link
+{
+  position: absolute;
+  top: 0px;
+  width: 35px;
+  height: 30px;
+  left: 425px;
+}
+
+div.embeddedControls_Link_Enabled
+{
+  cursor: pointer;
+  background-image: url('hud/control_link_N.png');
+}
+
+div.embeddedControls_Link_Enabled:active
+{
+  background-image: url('hud/control_link_P.png');
+}
