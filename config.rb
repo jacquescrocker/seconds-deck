@@ -70,7 +70,7 @@ helpers do
   end
 
   def presentation_slides
-    Dir["./source/presentation/*.png"].each_with_index do |img_path, i|
+    Dir["./source/presentation/*.png"].sort.each_with_index do |img_path, i|
       img_path = img_path.gsub("./source/", "").gsub("/_", "/").gsub(/$_/, "")
       yield img_path, i
     end
