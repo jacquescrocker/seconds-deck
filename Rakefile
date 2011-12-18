@@ -12,6 +12,7 @@ namespace :github do
     puts "Building middleman..."
     puts `rm -Rf ./build`
     puts `middleman build`
+    puts `cp ./source/CNAME ./build/CNAME`
 
     puts "Deploying to github (#{repo})..."
     puts `cd ./build && git init`
