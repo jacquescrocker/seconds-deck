@@ -34,11 +34,25 @@ Learn more about middleman here: [http://middlemanapp.com/](http://middlemanapp.
 
 this outputs the build folder to build/, copy this to any static folder to deploy your slideshow
 
+## Pull for Git
 
-## Autodeploy to Github
+
+    rake pull
+
+
+## Push updates to Git
+
+    rake push
+
+## Deploy to Github
 
     rake github:deploy
     
+
+## All in One (pulls, push's, redeploys)
+
+    rake deploy
+
 ## Source
 
 See it here: [http://github.com/railsjedi/middleman-shower](http://github.com/railsjedi/middleman-shower)

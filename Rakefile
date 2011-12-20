@@ -1,3 +1,21 @@
+
+task :pull do
+  puts `git commit -a -m 'refreshing'`
+  puts `git pull origin master`
+end
+
+
+task :push do
+  puts `git commit -a -m 'refreshing'`
+  puts `git push origin master`
+end
+
+task :deploy do
+  Rake::Task["pull"].invoke
+  Rake::Task["push"].invoke
+  Rake::Task["github:deploy"].invoke
+end
+
 namespace :github do
   desc "Build and deploy to github"
   task :deploy do
