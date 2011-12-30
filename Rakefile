@@ -22,11 +22,6 @@ namespace :github do
     # set up repo
     repo = "git@github.com:seconds/seconds.github.com.git"
 
-    if repo == nil or repo == ""
-      puts "ERROR: can't find a valid repo. Use rake REPO=git@github.com:username/repo.git deploy:github to override"
-      return
-    end
-
     puts "Building middleman..."
     puts `rm -Rf ./build`
     puts `middleman build`
